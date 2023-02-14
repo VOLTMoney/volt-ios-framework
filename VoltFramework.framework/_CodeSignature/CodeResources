@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		/JJJYlubn4nAgm/asoyCgH8wgT0=
+		uDWXi47yJin0BZClcKF2cr9/gC4=
 		</data>
 		<key>Headers/VoltFramework-Swift.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/VoltFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		8bF3Sblt6Nlyu3xnBqyCAItGQnI=
+		N9ldrkmhjNNg0LNY7wNTHq0N3Z4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9stPdcLXbF7ODjj80mR10ObHhfdtMynIMnN0Ul9W4OI=
+			DgiNdX1W6xPuBjqV62vj+r9HcQbFMpB9C6YipuML8ZU=
 			</data>
 		</dict>
 		<key>Headers/VoltFramework-Swift.h</key>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l0k1IO7pupw2d/BMVxM72J4Bxe0R9yY4CP/yCtksjuk=
+			l6FGQn2Ne+SFdGSGJ3FHKt5WFIM77iST7OluJWUIG8k=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
