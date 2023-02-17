@@ -12,5 +12,6 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "15.0"
   spec.source       = { :git => "https://github.com/VOLTMoney/volt-ios-framework.git", :tag => "1.0.3" }
   spec.ios.vendored_frameworks = "VoltFramework.framework"
-
+ spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
