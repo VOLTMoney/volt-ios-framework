@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "VoltFramework"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "VoltFramework ia a framework."
   spec.swift_versions    = "5.0"
 
@@ -9,8 +9,8 @@ Pod::Spec.new do |spec|
 
   spec.license      = "VoltMoney"
   spec.author       = { "Soumya Sethy" => "soumya.sethy@voltmoney.in" }
-  spec.platform     = :ios, "15.0"
-  spec.source       = { :git => "https://github.com/VOLTMoney/volt-ios-framework.git", :tag => "1.0.4" }
+  spec.platform     = :ios, "13.0"
+  spec.source       = { :git => "https://github.com/VOLTMoney/volt-ios-framework.git", :tag => "1.0.5" }
   spec.ios.vendored_frameworks = "VoltFramework.framework"
 
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
