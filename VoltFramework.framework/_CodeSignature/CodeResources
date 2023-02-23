@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/VoltFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		N9ldrkmhjNNg0LNY7wNTHq0N3Z4=
+		5HxOdYvL1noBaFCA1HuTyERL398=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>VoltHomeViewController.nib</key>
 		<data>
-		0Gh4ZffUE72ujgZ4vTzKJn4KCIg=
+		riUFO4mlQt/73yxZsGQHtw4RwXM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l6FGQn2Ne+SFdGSGJ3FHKt5WFIM77iST7OluJWUIG8k=
+			E3oROeBeEMaEP4+8/uYcF8U3eKggN3jezGn1A9+VnMU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -151,7 +151,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SowFUaUSTVsyBvMNysPeszPBJ/4XoTyEUMeo4u7vpOE=
+			0FV3B6Xr4urq1SgVmNfiB340HzCc8WpAHrwRimJykTQ=
 			</data>
 		</dict>
 	</dict>
