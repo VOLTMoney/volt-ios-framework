@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "VoltFramework"
-  spec.version      = "1.0.14"
+  spec.version      = "1.0.16"
   spec.summary      = "VoltFramework ia a framework."
   spec.swift_versions    = "5.0"
 
