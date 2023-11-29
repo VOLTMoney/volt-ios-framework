@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.swift_versions    = "5.0"
 
   spec.homepage     = "https://github.com/VOLTMoney/volt-ios-framework.git"
-  spec.description   = "VoltFramework.git is a swift framework"
+  spec.description   = "VoltFramework.git is a swift frameworks"
 
   spec.license      = "VoltMoney"
   spec.author       = { "Soumya Sethy" => "soumya.sethy@voltmoney.in" }
