@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
   spec.name         = "VoltFramework"
   spec.version      = "2.0.5"
   spec.summary      = "VoltFramework ia a framework."
-  spec.swift_versions    = "[5.0,5.9]"  
+  spec.swift_versions = ['5.0', '5.9']
 
   spec.homepage     = "https://github.com/VOLTMoney/volt-ios-framework.git"
   spec.description   = "VoltFramework.git is a swift framework"
