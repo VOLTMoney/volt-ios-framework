@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
 
   spec.license      = "VoltMoney"
   spec.author       = { "Soumya Sethy" => "soumya.sethy@voltmoney.in" }
-  spec.platform     = :ios, "15.0"
+  spec.platform     = :ios, "14.0"
   spec.source       = { :git => "https://github.com/VOLTMoney/volt-ios-framework.git", :tag => "2.0.25" }
   spec.ios.vendored_frameworks = "VoltFramework.framework"
 
