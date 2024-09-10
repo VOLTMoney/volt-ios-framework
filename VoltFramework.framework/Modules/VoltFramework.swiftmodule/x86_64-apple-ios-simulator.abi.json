@@ -2627,6 +2627,34 @@
           },
           {
             "kind": "Function",
+            "name": "handleSwipe",
+            "printedName": "handleSwipe(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UISwipeGestureRecognizer",
+                "printedName": "UIKit.UISwipeGestureRecognizer",
+                "usr": "c:objc(cs)UISwipeGestureRecognizer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VoltFramework@objc(cs)VoltHomeViewController(im)handleSwipe:",
+            "mangledName": "$s13VoltFramework0A18HomeViewControllerC11handleSwipeyySo24UISwipeGestureRecognizerCF",
+            "moduleName": "VoltFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "fetchData",
             "printedName": "fetchData()",
             "children": [
@@ -4179,6 +4207,28 @@
           },
           {
             "kind": "Function",
+            "name": "FaqClicked",
+            "printedName": "FaqClicked()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13VoltFramework0A12SDKContainerC10FaqClickedyyFZ",
+            "mangledName": "$s13VoltFramework0A12SDKContainerC10FaqClickedyyFZ",
+            "moduleName": "VoltFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "logout",
             "printedName": "logout()",
             "children": [
@@ -4189,11 +4239,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13VoltFramework0A12SDKContainerC6logoutyyF",
-            "mangledName": "$s13VoltFramework0A12SDKContainerC6logoutyyF",
+            "usr": "s:13VoltFramework0A12SDKContainerC6logoutyyFZ",
+            "mangledName": "$s13VoltFramework0A12SDKContainerC6logoutyyFZ",
             "moduleName": "VoltFramework",
-            "isOpen": true,
+            "static": true,
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -8965,6 +9016,69 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "showVoltBottomNavBar",
+            "printedName": "showVoltBottomNavBar",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13VoltFramework17PlatformSDKConfigV04showA12BottomNavBarSbSgvp",
+            "mangledName": "$s13VoltFramework17PlatformSDKConfigV04showA12BottomNavBarSbSgvp",
+            "moduleName": "VoltFramework",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 8,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13VoltFramework17PlatformSDKConfigV04showA12BottomNavBarSbSgvg",
+                "mangledName": "$s13VoltFramework17PlatformSDKConfigV04showA12BottomNavBarSbSgvg",
+                "moduleName": "VoltFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "TypeDecl",
             "name": "CodingKeys",
             "printedName": "CodingKeys",
@@ -9272,6 +9386,44 @@
                 "mangledName": "$s13VoltFramework17PlatformSDKConfigV10CodingKeysO013showPoweredByA5MoneyyA2EmF",
                 "moduleName": "VoltFramework",
                 "fixedbinaryorder": 7
+              },
+              {
+                "kind": "Var",
+                "name": "showVoltBottomNavBar",
+                "printedName": "showVoltBottomNavBar",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(VoltFramework.PlatformSDKConfig.CodingKeys.Type) -> VoltFramework.PlatformSDKConfig.CodingKeys",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "VoltFramework.PlatformSDKConfig.CodingKeys",
+                        "usr": "s:13VoltFramework17PlatformSDKConfigV10CodingKeysO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "VoltFramework.PlatformSDKConfig.CodingKeys.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "VoltFramework.PlatformSDKConfig.CodingKeys",
+                            "usr": "s:13VoltFramework17PlatformSDKConfigV10CodingKeysO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13VoltFramework17PlatformSDKConfigV10CodingKeysO04showA12BottomNavBaryA2EmF",
+                "mangledName": "$s13VoltFramework17PlatformSDKConfigV10CodingKeysO04showA12BottomNavBaryA2EmF",
+                "moduleName": "VoltFramework",
+                "fixedbinaryorder": 8
               },
               {
                 "kind": "Constructor",
@@ -9582,7 +9734,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(showVoltDefaultHeader:showVoltLogo:showHome:showLogout:showPostLoanJourney:customLogoURL:customSupportNumber:showPoweredByVoltMoney:)",
+            "printedName": "init(showVoltDefaultHeader:showVoltLogo:showHome:showLogout:showPostLoanJourney:customLogoURL:customSupportNumber:showPoweredByVoltMoney:showVoltBottomNavBar:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9701,11 +9853,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13VoltFramework17PlatformSDKConfigV04showA13DefaultHeader0eA4Logo0E4Home0E6Logout0E15PostLoanJourney06customH3URL0N13SupportNumber0e9PoweredByA5MoneyACSbSg_A4LSSSgAmLtcfc",
-            "mangledName": "$s13VoltFramework17PlatformSDKConfigV04showA13DefaultHeader0eA4Logo0E4Home0E6Logout0E15PostLoanJourney06customH3URL0N13SupportNumber0e9PoweredByA5MoneyACSbSg_A4LSSSgAmLtcfc",
+            "usr": "s:13VoltFramework17PlatformSDKConfigV04showA13DefaultHeader0eA4Logo0E4Home0E6Logout0E15PostLoanJourney06customH3URL0N13SupportNumber0e9PoweredByA5Money0eA12BottomNavBarACSbSg_A4MSSSgAn2Mtcfc",
+            "mangledName": "$s13VoltFramework17PlatformSDKConfigV04showA13DefaultHeader0eA4Logo0E4Home0E6Logout0E15PostLoanJourney06customH3URL0N13SupportNumber0e9PoweredByA5Money0eA12BottomNavBarACSbSg_A4MSSSgAn2Mtcfc",
             "moduleName": "VoltFramework",
             "implicit": true,
             "init_kind": "Designated"
@@ -13318,7 +13484,7 @@
     {
       "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/VoltHomeViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1973,
+      "offset": 3426,
       "length": 5,
       "value": "false"
     },
@@ -13416,14 +13582,14 @@
     {
       "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2128,
+      "offset": 2164,
       "length": 15,
       "value": "\"customLogoUrl\""
     },
     {
       "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2128,
+      "offset": 2164,
       "length": 15,
       "value": "\"customLogoUrl\""
     },

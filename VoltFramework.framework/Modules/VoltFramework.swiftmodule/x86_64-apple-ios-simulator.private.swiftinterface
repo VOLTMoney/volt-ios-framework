@@ -63,7 +63,8 @@ extension VoltFramework.VoltHomeViewController : WebKit.WKNavigationDelegate {
 }
 public class VoltSDKContainer {
   public init(voltInstance: VoltFramework.VoltInstance? = nil)
-  public func logout()
+  public static func FaqClicked()
+  public static func logout()
   public static func preCreateApplication(dob: Swift.String, email: Swift.String, panNumber: Swift.String, mobileNumber: Swift.Int, callback: ((_ response: VoltFramework.APIResponse?) -> Swift.Void)?)
   @objc deinit
 }
