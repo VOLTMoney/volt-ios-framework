@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "VoltFramework",
+    "printedName": "VoltFramework",
     "children": [
       {
         "kind": "Import",
@@ -88,6 +88,20 @@
         "moduleName": "VoltFramework",
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -376,6 +390,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -760,6 +788,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1529,7 +1571,23 @@
         "mangledName": "$s13VoltFramework8ResourceV",
         "moduleName": "VoltFramework",
         "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
-        "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>"
+        "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -1653,7 +1711,23 @@
         "declKind": "Protocol",
         "usr": "s:13VoltFramework22NetworkManagerProtocolP",
         "mangledName": "$s13VoltFramework22NetworkManagerProtocolP",
-        "moduleName": "VoltFramework"
+        "moduleName": "VoltFramework",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -1805,6 +1879,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "NetworkManagerProtocol",
             "printedName": "NetworkManagerProtocol",
             "usr": "s:13VoltFramework22NetworkManagerProtocolP",
@@ -1879,6 +1967,7 @@
             "objc_name": "userContentController:didReceiveScriptMessage:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1911,6 +2000,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "AccessControl",
@@ -2034,9 +2124,10 @@
             "moduleName": "VoltFramework",
             "static": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -2159,9 +2250,10 @@
             "moduleName": "VoltFramework",
             "static": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "Final",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "AccessControl"
             ],
@@ -2260,6 +2352,122 @@
           },
           {
             "kind": "Var",
+            "name": "isLenderDsp",
+            "printedName": "isLenderDsp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13VoltFramework0A18HomeViewControllerC11isLenderDspSbSgvp",
+            "mangledName": "$s13VoltFramework0A18HomeViewControllerC11isLenderDspSbSgvp",
+            "moduleName": "VoltFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13VoltFramework0A18HomeViewControllerC11isLenderDspSbSgvg",
+                "mangledName": "$s13VoltFramework0A18HomeViewControllerC11isLenderDspSbSgvg",
+                "moduleName": "VoltFramework",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13VoltFramework0A18HomeViewControllerC11isLenderDspSbSgvs",
+                "mangledName": "$s13VoltFramework0A18HomeViewControllerC11isLenderDspSbSgvs",
+                "moduleName": "VoltFramework",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13VoltFramework0A18HomeViewControllerC11isLenderDspSbSgvM",
+                "mangledName": "$s13VoltFramework0A18HomeViewControllerC11isLenderDspSbSgvM",
+                "moduleName": "VoltFramework",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "exitCallback",
             "printedName": "exitCallback",
             "children": [
@@ -2296,8 +2504,9 @@
             "moduleName": "VoltFramework",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "hasStorage": true,
@@ -2426,8 +2635,9 @@
             "moduleName": "VoltFramework",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage"
             ],
             "hasStorage": true,
@@ -2559,6 +2769,7 @@
             "mangledName": "$s13VoltFramework0A18HomeViewControllerC9authToken12platformCode17hideNavigationBar12exitCallbackACSS_SSSbySScSgtcfc",
             "moduleName": "VoltFramework",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -2600,6 +2811,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -2626,6 +2838,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -2655,6 +2868,7 @@
             "moduleName": "VoltFramework",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -2677,6 +2891,7 @@
             "moduleName": "VoltFramework",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -2704,6 +2919,7 @@
             "moduleName": "VoltFramework",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "IBAction",
               "ObjC"
@@ -2734,6 +2950,7 @@
             "moduleName": "VoltFramework",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -2761,6 +2978,7 @@
             "moduleName": "VoltFramework",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -2782,6 +3000,7 @@
             "moduleName": "VoltFramework",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -2811,6 +3030,7 @@
             "objc_name": "safariViewControllerDidFinish:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2847,6 +3067,7 @@
             "objc_name": "safariViewController:didCompleteInitialLoad:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2883,6 +3104,7 @@
             "objc_name": "safariViewController:initialLoadDidRedirectToURL:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -2938,6 +3160,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -2996,6 +3219,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3042,6 +3266,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3081,7 +3306,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Error",
-                "printedName": "Swift.Error",
+                "printedName": "any Swift.Error",
                 "usr": "s:s5ErrorP"
               }
             ],
@@ -3094,6 +3319,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3150,6 +3376,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3186,6 +3413,7 @@
             "moduleName": "VoltFramework",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -3200,6 +3428,7 @@
         "moduleName": "VoltFramework",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -3213,6 +3442,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3332,12 +3575,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(VoltFramework.FetchDataError.Type) -> (Swift.Error) -> VoltFramework.FetchDataError",
+                "printedName": "(VoltFramework.FetchDataError.Type) -> (any Swift.Error) -> VoltFramework.FetchDataError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> VoltFramework.FetchDataError",
+                    "printedName": "(any Swift.Error) -> VoltFramework.FetchDataError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -3348,7 +3591,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -3510,12 +3753,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(VoltFramework.FetchDataError.Type) -> (Swift.Error) -> VoltFramework.FetchDataError",
+                "printedName": "(VoltFramework.FetchDataError.Type) -> (any Swift.Error) -> VoltFramework.FetchDataError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> VoltFramework.FetchDataError",
+                    "printedName": "(any Swift.Error) -> VoltFramework.FetchDataError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -3526,7 +3769,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -3560,6 +3803,20 @@
         "moduleName": "VoltFramework",
         "isEnumExhaustive": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -3838,7 +4095,23 @@
         "usr": "s:13VoltFramework14RestApiManagerC",
         "mangledName": "$s13VoltFramework14RestApiManagerC",
         "moduleName": "VoltFramework",
-        "isOpen": true
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -3999,7 +4272,23 @@
         "declKind": "Protocol",
         "usr": "s:13VoltFramework0A8ProtocolP",
         "mangledName": "$s13VoltFramework0A8ProtocolP",
-        "moduleName": "VoltFramework"
+        "moduleName": "VoltFramework",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -4346,6 +4635,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "VoltProtocol",
@@ -5354,6 +5657,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -5415,6 +5732,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -5545,7 +5869,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -5570,7 +5894,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -5591,6 +5915,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -7374,6 +7712,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -7435,6 +7787,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -7681,7 +8040,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -7706,7 +8065,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -7727,6 +8086,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -8305,6 +8678,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -8366,6 +8753,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -8444,7 +8838,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -8469,7 +8863,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -8490,6 +8884,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -9775,6 +10183,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -9836,6 +10258,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
               }
             ]
           },
@@ -10012,7 +10441,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -10037,7 +10466,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -10058,6 +10487,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -10664,7 +11107,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -10689,7 +11132,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -10707,6 +11150,20 @@
         "mangledName": "$s13VoltFramework10CSPillDataV",
         "moduleName": "VoltFramework",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -10964,6 +11421,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -11475,7 +11946,23 @@
         "usr": "s:13VoltFramework15NetworkConstantC",
         "mangledName": "$s13VoltFramework15NetworkConstantC",
         "moduleName": "VoltFramework",
-        "isOpen": true
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -12162,6 +12649,22 @@
         "isOpen": true,
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -12200,6 +12703,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -12223,6 +12727,7 @@
             "moduleName": "VoltFramework",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -12244,6 +12749,7 @@
             "moduleName": "VoltFramework",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -12271,6 +12777,7 @@
             "moduleName": "VoltFramework",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -12325,6 +12832,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -12366,6 +12874,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -12378,6 +12887,7 @@
         "moduleName": "VoltFramework",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -12390,6 +12900,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -12628,6 +13152,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -12668,6 +13206,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
           }
         ]
       },
@@ -12955,6 +13500,20 @@
           "Final"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "ObservableObject",
@@ -13256,6 +13815,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -13263,17 +13836,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -13526,6 +14099,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -13533,17 +14120,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -13609,6 +14196,20 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -13733,6 +14334,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -13826,13 +14441,17 @@
         "declKind": "Struct",
         "usr": "s:7SwiftUI5ColorV",
         "mangledName": "$s7SwiftUI5ColorV",
-        "moduleName": "SwiftUI",
+        "moduleName": "SwiftUICore",
         "intro_Macosx": "10.15",
         "intro_iOS": "13.0",
         "intro_tvOS": "13.0",
         "intro_watchOS": "6.0",
         "declAttributes": [
           "Frozen",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
           "Available",
           "Available",
           "Available",
@@ -13870,38 +14489,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Transferable",
-            "printedName": "Transferable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Representation",
-                "printedName": "Representation",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some CoreTransferable.TransferRepresentation",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransferRepresentation",
-                        "printedName": "CoreTransferable.TransferRepresentation",
-                        "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "Swift.Sendable",
-                        "usr": "s:s8SendableP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:16CoreTransferable0B0P",
-            "mangledName": "$s16CoreTransferable0B0P"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -13946,6 +14544,35 @@
             ],
             "usr": "s:7SwiftUI4ViewP",
             "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
           }
         ]
       },
@@ -13986,13 +14613,17 @@
         "declKind": "Struct",
         "usr": "s:7SwiftUI5ImageV",
         "mangledName": "$s7SwiftUI5ImageV",
-        "moduleName": "SwiftUI",
+        "moduleName": "SwiftUICore",
         "intro_Macosx": "10.15",
         "intro_iOS": "13.0",
         "intro_tvOS": "13.0",
         "intro_watchOS": "6.0",
         "declAttributes": [
           "Frozen",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
           "Available",
           "Available",
           "Available",
@@ -14013,6 +14644,20 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -14056,12 +14701,6 @@
                         "name": "TransferRepresentation",
                         "printedName": "CoreTransferable.TransferRepresentation",
                         "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Sendable",
-                        "printedName": "Swift.Sendable",
-                        "usr": "s:s8SendableP"
                       }
                     ]
                   }
@@ -14078,385 +14717,245 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 456,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 478,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 500,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 523,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 549,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 456,
-      "length": 5,
-      "value": "\"GET\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 478,
-      "length": 6,
-      "value": "\"POST\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 500,
-      "length": 5,
-      "value": "\"PUT\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 523,
-      "length": 7,
-      "value": "\"PATCH\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 549,
-      "length": 8,
-      "value": "\"DELETE\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 617,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 657,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 694,
       "length": 12,
       "value": "\"User-Agent\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 731,
       "length": 16,
       "value": "\"SAA-session-id\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 770,
       "length": 35,
       "value": "\"application\/x-www-form-urlencoded\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 828,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 868,
       "length": 8,
       "value": "\"Bearer\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 617,
-      "length": 14,
-      "value": "\"Content-Type\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 657,
-      "length": 15,
-      "value": "\"Authorization\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 694,
-      "length": 12,
-      "value": "\"User-Agent\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 731,
-      "length": 16,
-      "value": "\"SAA-session-id\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 770,
-      "length": 35,
-      "value": "\"application\/x-www-form-urlencoded\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 828,
-      "length": 18,
-      "value": "\"application\/json\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
-      "kind": "StringLiteral",
-      "offset": 868,
-      "length": 8,
-      "value": "\"Bearer\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 1030,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/VoltHomeViewController.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/VoltHomeViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3374,
+      "offset": 3621,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/VoltHomeViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 157,
-      "length": 22,
-      "value": "\"VoltFramework.VoltHomeViewController\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
       "kind": "StringLiteral",
       "offset": 393,
       "length": 12,
       "value": "\"auth_token\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 393,
-      "length": 12,
-      "value": "\"auth_token\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
       "kind": "StringLiteral",
       "offset": 1054,
       "length": 7,
       "value": "\"@type\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
       "kind": "StringLiteral",
       "offset": 1087,
       "length": 11,
       "value": "\"accountId\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
       "kind": "StringLiteral",
       "offset": 1289,
       "length": 24,
       "value": "\"platformAgreementIdUri\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1054,
-      "length": 7,
-      "value": "\"@type\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1087,
-      "length": 11,
-      "value": "\"accountId\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1289,
-      "length": 24,
-      "value": "\"platformAgreementIdUri\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
       "kind": "StringLiteral",
       "offset": 1603,
       "length": 9,
       "value": "\"app_key\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
       "kind": "StringLiteral",
       "offset": 1638,
       "length": 12,
       "value": "\"app_secret\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1603,
-      "length": 9,
-      "value": "\"app_key\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1638,
-      "length": 12,
-      "value": "\"app_secret\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
       "kind": "StringLiteral",
       "offset": 2197,
       "length": 15,
       "value": "\"customLogoUrl\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Model\/APIResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 2197,
-      "length": 15,
-      "value": "\"customLogoUrl\""
-    },
-    {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
       "kind": "StringLiteral",
       "offset": 494,
       "length": 16,
       "value": "\"SDK_INVESTWELL\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
       "kind": "StringLiteral",
       "offset": 544,
       "length": 34,
       "value": "\"https:\/\/api.staging.voltmoney.in\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
       "kind": "StringLiteral",
       "offset": 615,
       "length": 51,
       "value": "\"https:\/\/app.staging.voltmoney.in\/partnerplatform?\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
       "kind": "StringLiteral",
       "offset": 717,
       "length": 33,
       "value": "\"\/v1\/partner\/platform\/auth\/login\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
       "kind": "StringLiteral",
       "offset": 805,
       "length": 50,
       "value": "\"\/v1\/partner\/platform\/las\/createCreditApplication\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
       "kind": "StringLiteral",
       "offset": 903,
       "length": 50,
       "value": "\"\/v1\/partner\/platform\/las\/createCreditApplication\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
       "kind": "StringLiteral",
       "offset": 1021,
       "length": 31,
       "value": "\"volt-sdk-staging@voltmoney.in\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/NetworkConstant.swift",
       "kind": "StringLiteral",
       "offset": 1080,
       "length": 34,
       "value": "\"e10b6eaf2e334d1b955434e25fcfe2d8\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/VoltInstance.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/VoltInstance.swift",
       "kind": "StringLiteral",
       "offset": 536,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/VoltInstance.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/VoltInstance.swift",
       "kind": "StringLiteral",
       "offset": 565,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/VoltInstance.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/VoltInstance.swift",
       "kind": "StringLiteral",
       "offset": 588,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/subhash\/Desktop\/ios-sdk\/volt-ios-sdk\/VoltFramework\/Managers\/ReachabilityManager\/ReachabilityMonitor.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Documents\/iosSdk\/volt-ios-sdk\/VoltFramework\/Managers\/ReachabilityManager\/ReachabilityMonitor.swift",
       "kind": "StringLiteral",
       "offset": 309,
       "length": 9,
       "value": "\"Monitor\""
     },
     {
-      "filePath": "\/Users\/subhash\/Library\/Developer\/Xcode\/DerivedData\/VoltFramework-flwtynztpreqodglbksmjfkohtjd\/Build\/Intermediates.noindex\/VoltFramework.build\/Debug-iphonesimulator\/VoltFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Library\/Developer\/Xcode\/DerivedData\/VoltFramework-asflkrapzyxdrvaifewuwltvwcen\/Build\/Intermediates.noindex\/VoltFramework.build\/Debug-iphonesimulator\/VoltFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 627,
       "length": 14,
       "value": "\"primaryColor\""
     },
     {
-      "filePath": "\/Users\/subhash\/Library\/Developer\/Xcode\/DerivedData\/VoltFramework-flwtynztpreqodglbksmjfkohtjd\/Build\/Intermediates.noindex\/VoltFramework.build\/Debug-iphonesimulator\/VoltFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/sagarbhatnagar\/Library\/Developer\/Xcode\/DerivedData\/VoltFramework-asflkrapzyxdrvaifewuwltvwcen\/Build\/Intermediates.noindex\/VoltFramework.build\/Debug-iphonesimulator\/VoltFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 864,
       "length": 6,
